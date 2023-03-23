@@ -1,5 +1,5 @@
 --dataset_name
-dlg4
+yap1
 --net_file
 network_specs/cnns/cnn-5xk3f128.yml
 --encoding
@@ -13,6 +13,3 @@ output/training_logs
 --epochs
 2
 --early_stopping
---split_dir
-data/dlg4/standard
-1
