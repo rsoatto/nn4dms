@@ -19,6 +19,7 @@ import pandas as pd
 import tensorflow as tf
 import uuid
 import shortuuid
+import pdb
 
 # mine
 import utils
@@ -586,6 +587,7 @@ def main(args):
 if __name__ == "__main__":
     parser = get_parser()
     parsed_args = parser.parse_args()
+    pdb.set_trace()
     if parsed_args.dataset_name == "":
         if parsed_args.dataset_file == "" or parsed_args.wt_aa == "" or parsed_args.wt_ofs == "":
             parser.error("you must specify either a dataset_name (for a dataset defined in constants.py) or "
