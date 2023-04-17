@@ -37,8 +37,8 @@ model3 = argparse.Namespace(batch_size=32, cluster='local', compress_everything=
 
 protein_gym = pd.read_csv("/home/renzo/workspace/datasets/protein_gym.csv")
 mult_mutations = protein_gym[protein_gym['includes_multiple_mutants']== True]
-sizes = [464]
-for id in mult_mutations['DMS_id'].to_numpy():
+sizes = [10, 100,  464, 1000, 4641]
+for id in np.array(['yap1']):
     id = id.split('_')[0].lower()
     model1.dataset_name=id
     model2.dataset_name=id
