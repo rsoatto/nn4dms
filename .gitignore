@@ -8,6 +8,6 @@ pip-wheel-metadata/
 
 # Output training logs
 output/*
-!output/training_logs/README.md
+output/training_logs/README.md
 data/*
-
+output_big_test/*
